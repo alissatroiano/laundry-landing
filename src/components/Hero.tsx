@@ -1,9 +1,10 @@
 import { Clock, Heart, Sparkles } from 'lucide-react';
 import { BubbleAnimation } from './BubbleAnimation';
+import '../BubbleAnimations.css'
 
 export function Hero() {
   return (
-    <section className="relative pt-24 pb-20 overflow-hidden bg-gradient-to-br from-blue-50 via-white to-blue-50">
+    <section className="relative pt-24 pb-20 overflow-hidden bg-gradient-to-br from-blue-600 via-cyan-200 to-indigo-500">
       <BubbleAnimation />
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -16,19 +17,19 @@ export function Hero() {
 
             <h1 className="text-5xl md:text-6xl font-bold text-gray-900 leading-tight">
               Fresh, Clean Laundry
-              <span className="block text-blue-600">Delivered to Your Door</span>
+              <span className="block text-pink-600">Delivered to Your Door</span>
             </h1>
 
-            <p className="text-xl text-gray-600 leading-relaxed">
+            <p className="text-6l font-bold text-slate-900 leading-relaxed">
               Military Mama's professional wash, fold, and delivery service with allergen-free options.
               Serving The Bronx and Westchester County with military-level precision.
             </p>
 
             <div className="flex flex-wrap gap-4">
-              <button className="bg-blue-600 text-white px-8 py-4 rounded-full hover:bg-blue-700 transition-all transform hover:scale-105 font-medium text-lg shadow-lg">
+              <button className="bg-yellow-500 text-black px-8 py-4 rounded-full hover:bg-yellow-200 transition-all transform hover:scale-105 font-medium text-lg shadow-lg">
                 Schedule Pickup
               </button>
-              <button className="bg-white text-gray-900 px-8 py-4 rounded-full hover:bg-gray-50 transition-all border-2 border-gray-200 font-medium text-lg">
+              <button className="bg-cyan-100 text-cyan-900 px-8 py-4 rounded-full hover:bg-cyan-400 transition-all font-medium text-lg">
                 Learn More
               </button>
             </div>
