@@ -8,10 +8,10 @@ export function Footer() {
           <div>
             <div className="flex items-center space-x-2 mb-4">
               <Shirt className="w-8 h-8 text-blue-400" />
-              <span className="text-2xl font-bold">FreshFold</span>
+              <span className="text-2xl font-bold">Military Mama</span>
             </div>
             <p className="text-gray-400 leading-relaxed">
-              Professional laundry service with a personal touch. Experience the perfect fold, every time.
+              Professional laundry service serving The Bronx and Westchester County with military-grade precision and care.
             </p>
           </div>
 
@@ -56,7 +56,7 @@ export function Footer() {
 
         <div className="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center">
           <p className="text-gray-400 text-sm mb-4 md:mb-0">
-            © 2024 FreshFold. All rights reserved.
+            © 2024 Military Mama. All rights reserved.
           </p>
           <div className="flex space-x-6 text-sm text-gray-400">
             <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>

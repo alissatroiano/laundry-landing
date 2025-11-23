@@ -10,7 +10,7 @@ export function Contact() {
               Get in Touch
             </h2>
             <p className="text-xl text-gray-600 mb-8">
-              Ready to experience the FreshFold difference? Contact us today to schedule your first pickup.
+              Ready to experience the Military Mama difference? Contact us today to schedule your first pickup.
             </p>
 
             <div className="space-y-6">
@@ -20,7 +20,7 @@ export function Contact() {
                 </div>
                 <div>
                   <h3 className="font-semibold text-gray-900 mb-1">Phone</h3>
-                  <p className="text-gray-600">(555) 012-3456</p>
+                  <p className="text-gray-600">(917) 312-9946</p>
                 </div>
               </div>
 
@@ -30,7 +30,7 @@ export function Contact() {
                 </div>
                 <div>
                   <h3 className="font-semibold text-gray-900 mb-1">Email</h3>
-                  <p className="text-gray-600">hello@freshfold.com</p>
+                  <p className="text-gray-600">mmcleaningsvcs@yahoo.com</p>
                 </div>
               </div>
 
@@ -40,7 +40,7 @@ export function Contact() {
                 </div>
                 <div>
                   <h3 className="font-semibold text-gray-900 mb-1">Service Area</h3>
-                  <p className="text-gray-600">Serving the greater metro area</p>
+                  <p className="text-gray-600">The Bronx & Westchester County</p>
                 </div>
               </div>
 

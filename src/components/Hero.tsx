@@ -20,8 +20,8 @@ export function Hero() {
             </h1>
 
             <p className="text-xl text-gray-600 leading-relaxed">
-              Professional wash, fold, and delivery service with allergen-free options.
-              Experience the perfect fold, every time.
+              Military Mama's professional wash, fold, and delivery service with allergen-free options.
+              Serving The Bronx and Westchester County with military-level precision.
             </p>
 
             <div className="flex flex-wrap gap-4">

@@ -32,10 +32,10 @@ export function Features() {
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-            Why Choose FreshFold?
+            Why Choose Military Mama?
           </h2>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            We're not just another laundry service. We're your partner in keeping life fresh and clean.
+            We're not just another laundry service. With military-grade precision and care, we're your partner in keeping life fresh and clean.
           </p>
         </div>
 
