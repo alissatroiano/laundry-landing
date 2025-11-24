@@ -10,12 +10,12 @@ export function Hero() {
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid md:grid-cols-2 gap-12 items-center my-5 mx-0">
           <div className="space-y-8">
-            <div className="inline-flex items-center space-x-2 bg-purple-700 text-slate-900 px-4 py-4 rounded-full text-sm font-medium">
+            {/* <div className="inline-flex items-center space-x-2 bg-purple-700 text-slate-900 px-4 py-4 rounded-full text-xs">
               <Sparkles className="w-4 h-4 font-body text-neutral-100 font-light text-sm animate-pulse space-x-4" />
               <span className='font-body text-neutral-100 font-light text-sm'>Premium Laundry Service</span>
-            </div>
+            </div> */}
 
-            <h1 className="text-xl md:text-6xl font-bold text-gray-900 leading-tight">
+            <h1 className="text-xl md:text-6xl font-bold text-gray-900 leading-tight text-lg21">
               <span className='font-custom uppercase mb-2'>
               Fresh, Clean Laundry
               </span>
@@ -62,9 +62,9 @@ export function Hero() {
             <div className="relative z-10">
               <img
                 // src="folded-clothes.png"
-                src="https://images.unsplash.com/photo-1604176354204-9268737828e4?q=80&w=580&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                src="folded-clothes.png"
                 alt="Fresh folded laundry"
-                className="rounded-3xl shadow-2xl transition-all transform hover:scale-95"
+                className="rounded-3xl hero-img shadow-2xl transition-all transform hover:scale-95"
               />
             </div>
             <div className="absolute -top-4 -right-4 w-72 h-72 bg-blue-200 rounded-full blur-3xl opacity-30"></div>
