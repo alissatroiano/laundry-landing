@@ -12,18 +12,20 @@ export function Hero() {
           <div className="space-y-8">
             <div className="inline-flex items-center space-x-2 bg-purple-700 text-slate-900 px-4 py-2 rounded-full text-xs my-3">
               <Sparkles className="w-4 h-4 font-body text-neutral-100 font-light text-sm animate-pulse space-x-4" />
-            <span className='font-custom text-neutral-100 text-base font-semibold uppercase'>Premium Laundry Service</span>
+              <span className='font-custom text-neutral-100 text-base font-semibold uppercase'>Premium Laundry Service</span>
             </div>
 
             <h1 className="text-4xl md:text-6xl font-bold text-gray-900 leading-tight text-lg21">
               <span className='font-body uppercase mb-2 space-y-3'>
-              Fresh, Clean Laundry
+                Fresh, Clean Laundry
               </span>
               <span className="block text-purple-700 font-bold ml-px mt-2 font-custom text-4xl uppercase">Delivered to Your Door!</span>
             </h1>
 
             <h2 className="text-xl md:text-2xl font-bold text-slate-800 leading-relaxed font-custom">
-              Professional laundry service for all your needs.
+              Professional laundry service with a Mother's Touch.
+                <br />
+              *Serving The Bronx & Westchester County
             </h2>
 
             <div className="flex flex-wrap gap-4 pb-3">
@@ -33,7 +35,7 @@ export function Hero() {
               <a href="#services" className="bg-sky-100 text-cyan-900 px-5 py-4 rounded-full hover:bg-cyan-400 transition-all font-medium text-sm">
                 Learn More
               </a>
-            </div> 
+            </div>
 
             <div className="grid grid-cols-2 gap-2 pt-5">
               <div className="flex items-start space-x-2">
