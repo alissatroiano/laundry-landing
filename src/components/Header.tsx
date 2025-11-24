@@ -18,17 +18,17 @@ export function Header() {
               Why Choose Us
             </a>
             <a href="#pricing" className="text-slate-700 hover:text-sky-600 transition-colors font-medium text-lg">
-              Pricing
+              Prices
             </a>
-            <a href="#contact" className="text-slate-700 hover:text-sky-600 transition-colors font-medium text-lg">
-              Contact
+             <a href="#reviews" className="text-slate-700 hover:text-sky-600 transition-colors font-medium text-lg">
+              Reviews
             </a>
           </nav>
 
           <div className="flex items-center space-x-4">
-            <a href="tel:917-312-9946" className="sm:flex items-center text-purple-700 hover:text-purple-500 transition-colors font-bold">
+            <a href="#contact" className="sm:flex items-center text-purple-700 hover:text-purple-500 transition-colors font-bold">
               <Phone className="w-4 h-4 mr-2 hidden sm:flex" />
-              <span className="font-medium">(917) 312-9946</span>
+              <span className="font-medium">Contact</span>
             </a>
             {/* <button className="bg-yellow-400 text-black px-6 py-2 rounded-full hover:bg-lime-400 transition-colors font-medium text-lg">
               Book Now!
