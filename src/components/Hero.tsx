@@ -4,7 +4,7 @@ import '../BubbleAnimations.css'
 
 export function Hero() {
   return (
-    <section className="relative pt-20 pb-24 overflow-hidden bg-gradient-to-br from-sky-400 via-cyan-200 to-indigo-800 py-10" id='heroImg'>
+    <section className="relative pt-20 pb-24 overflow-hidden bg-gradient-to-br from-cyan-200 via-sky-200 to-cyan-200 py-10" id='heroImg'>
       <BubbleAnimation />
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
@@ -62,7 +62,7 @@ export function Hero() {
             <div className="relative z-10">
               <img
                 // src="folded-clothes.png"
-                src="https://images.unsplash.com/photo-1604176354204-9268737828e4?q=80&w=580&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                src="https://images.pexels.com/photos/5591581/pexels-photo-5591581.jpeg?auto=compress&cs=tinysrgb&w=800"
                 alt="Fresh folded laundry"
                 className="rounded-3xl hero-img shadow-2xl transition-all transform hover:scale-95"
               />

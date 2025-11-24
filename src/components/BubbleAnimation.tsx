@@ -55,8 +55,8 @@ export function BubbleAnimation() {
           bubble.size
         );
         gradient.addColorStop(0, `rgba(255, 255, 255, ${bubble.opacity})`);
-        gradient.addColorStop(0.5, `rgba(147, 197, 253, ${bubble.opacity * 0.5})`);
-        gradient.addColorStop(1, `rgba(59, 130, 246, ${bubble.opacity * 0.2})`);
+        gradient.addColorStop(0.5, `rgba(147, 197, 253, ${bubble.opacity * 0.75})`);
+        gradient.addColorStop(1, `rgba(59, 130, 246, ${bubble.opacity * 0.82})`);
 
         ctx.fillStyle = gradient;
         ctx.fill();
