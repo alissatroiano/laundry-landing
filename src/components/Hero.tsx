@@ -4,13 +4,13 @@ import '../BubbleAnimations.css'
 
 export function Hero() {
   return (
-    <section className="relative pt-20 pb-24 overflow-hidden bg-gradient-to-br from-cyan-200 via-sky-200 to-cyan-200 py-10" id='heroImg'>
+    <section className="relative overflow-hidden bg-gradient-to-br from-cyan-200 via-sky-200 to-cyan-200 py-5" id='heroImg'>
       <BubbleAnimation />
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
         <div className="grid md:grid-cols-2 gap-12 items-center my-5 mx-0">
           <div className="space-y-8">
-            <div className="inline-flex items-center space-x-2 bg-purple-700 text-slate-900 px-4 py-2 rounded-full text-xs">
+            <div className="inline-flex items-center space-x-2 bg-purple-700 text-slate-900 px-4 py-2 rounded-full text-xs my-3">
               <Sparkles className="w-4 h-4 font-body text-neutral-100 font-light text-sm animate-pulse space-x-4" />
             <span className='font-custom text-neutral-100 text-base font-semibold uppercase'>Premium Laundry Service</span>
             </div>
@@ -27,12 +27,12 @@ export function Hero() {
             </h2>
 
             <div className="flex flex-wrap gap-4 pb-3">
-              <button className="bg-amber-300 text-black px-5 py-4 rounded-full hover:bg-yellow-200 transition-all transform hover:scale-105 font-medium text-sm shadow-lg">
+              <a href="#contact" className="bg-amber-300 text-black px-5 py-4 rounded-full hover:bg-yellow-200 transition-all transform hover:scale-105 font-medium text-sm shadow-lg">
                 Contact
-              </button>
-              <button className="bg-sky-100 text-cyan-900 px-5 py-4 rounded-full hover:bg-cyan-400 transition-all font-medium text-sm">
+              </a>
+              <a href="#services" className="bg-sky-100 text-cyan-900 px-5 py-4 rounded-full hover:bg-cyan-400 transition-all font-medium text-sm">
                 Learn More
-              </button>
+              </a>
             </div> 
 
             <div className="grid grid-cols-2 gap-2 pt-5">
