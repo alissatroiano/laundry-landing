@@ -20,6 +20,9 @@ export function Header() {
             <a href="#pricing" className="text-gray-700 hover:text-blue-600 transition-colors font-medium">
               Pricing
             </a>
+            <a href="#reviews" className="text-gray-700 hover:text-blue-600 transition-colors font-medium">
+              Reviews
+            </a>
             <a href="#contact" className="text-gray-700 hover:text-blue-600 transition-colors font-medium">
               Contact
             </a>

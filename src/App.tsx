@@ -4,6 +4,7 @@ import { Services } from './components/Services';
 import { Features } from './components/Features';
 import { HowItWorks } from './components/HowItWorks';
 import { Pricing } from './components/Pricing';
+import { Reviews } from './components/Reviews';
 import { Contact } from './components/Contact';
 import { Footer } from './components/Footer';
 
@@ -16,6 +17,7 @@ function App() {
       <Features />
       <HowItWorks />
       <Pricing />
+      <Reviews />
       <Contact />
       <Footer />
     </div>
