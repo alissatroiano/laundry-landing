@@ -4,7 +4,7 @@ import '../BubbleAnimations.css'
 
 export function Hero() {
   return (
-    <section className="relative overflow-hidden bg-gradient-to-br from-sky-100 via-white-100 to-sky-100 py-5" id='heroImg'>
+    <section className="relative overflow-hidden bg-gradient-to-br from-sky-100 via-white-100 to-sky-100 dark:from-navy-800 dark:via-navy-900 dark:to-navy-800 py-5 transition-colors duration-300" id='heroImg'>
       <BubbleAnimation />
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
@@ -15,14 +15,14 @@ export function Hero() {
               <span className='font-custom text-neutral-100 text-base font-semibold uppercase'>Premium Laundry Service</span>
             </div>
 
-            <h1 className="text-4xl md:text-6xl font-bold text-gray-900 leading-tight text-lg21">
+            <h1 className="text-4xl md:text-6xl font-bold text-gray-900 dark:text-white leading-tight text-lg21 transition-colors duration-300">
               <span className='font-body uppercase mb-2 space-y-3'>
                 Fresh, Clean Laundry
               </span>
-              <span className="block text-purple-700 font-bold ml-px mt-2 font-custom text-4xl uppercase">Delivered to Your Door!</span>
+              <span className="block text-purple-700 dark:text-indigo-400 font-bold ml-px mt-2 font-custom text-4xl uppercase transition-colors duration-300">Delivered to Your Door!</span>
             </h1>
 
-            <h2 className="text-xl md:text-2xl font-bold text-slate-800 leading-relaxed font-custom">
+            <h2 className="text-xl md:text-2xl font-bold text-slate-800 dark:text-gray-300 leading-relaxed font-custom transition-colors duration-300">
               Professional laundry service for all your needs.
                 <br />
               *Serving The Bronx & Westchester County
@@ -43,8 +43,8 @@ export function Hero() {
                   <Clock className="w-6 h-6 text-purple-700" />
                 </div>
                 <div>
-                  <p className="font-semibold text-gray-900 font-body text-xs">24-Hour Service</p>
-                  <p className="text-xs text-slate-800">Next-day delivery available</p>
+                  <p className="font-semibold text-gray-900 dark:text-white font-body text-xs transition-colors duration-300">24-Hour Service</p>
+                  <p className="text-xs text-slate-800 dark:text-gray-400 transition-colors duration-300">Next-day delivery available</p>
                 </div>
               </div>
 
@@ -53,8 +53,8 @@ export function Hero() {
                   <Heart className="w-6 h-6 text-rose-600" />
                 </div>
                 <div>
-                  <p className="font-semibold text-gray-900 font-body text-xs">Allergen-Free</p>
-                  <p className="text-xs text-slate-700">Sensitive skin friendly products</p>
+                  <p className="font-semibold text-gray-900 dark:text-white font-body text-xs transition-colors duration-300">Allergen-Free</p>
+                  <p className="text-xs text-slate-700 dark:text-gray-400 transition-colors duration-300">Sensitive skin friendly products</p>
                 </div>
               </div>
             </div>

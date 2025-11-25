@@ -8,21 +8,24 @@ import { Contact } from './components/Contact';
 import { Footer } from './components/Footer';
 import { Reviews } from './components/UserReviews';
 import { BackToTop } from './components/BackToTop';
+import { ThemeProvider } from './context/ThemeContext';
 
 function App() {
   return (
-    <div className="min-h-screen">
-      <Header />
-      <Hero />
-      <Services />
+    <ThemeProvider>
+      <div className="min-h-screen bg-white dark:bg-navy-900 transition-colors duration-300">
+        <Header />
+        <Hero />
+        <Services />
         <HowItWorks />
-      <Features />
-      <Pricing />
-      <Reviews />
-      <Contact />
-      <Footer />
-      <BackToTop />
-    </div>
+        <Features />
+        <Pricing />
+        <Reviews />
+        <Contact />
+        <Footer />
+        <BackToTop />
+      </div>
+    </ThemeProvider>
   );
 }
 
