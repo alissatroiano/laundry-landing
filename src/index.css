@@ -1,22 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Just+Another+Hand&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Sofia+Sans+Extra+Condensed:ital,wght@0,1..1000;1,1..1000&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-
-.from-blue-50 {
-    --tw-gradient-from: #eff6ff var(--tw-gradient-from-position);
-    --tw-gradient-from: #000000d4 var(--tw-gradient-from-position);
-    --tw-gradient-to: rgb(239 246 255 / 0) var(--tw-gradient-to-position);
-    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to)
-}
-
-.via-white {
-    --tw-gradient-to: rgb(255 255 255 / 0) var(--tw-gradient-to-position);
-    --tw-gradient-stops: var(--tw-gradient-from), #fff var(--tw-gradient-via-position), var(--tw-gradient-to)
-    --tw-gradient-stops: var(--tw-gradient-from), #042575 var(--tw-gradient-via-position), var(--tw-gradient-to);
-}
-
-.to-blue-50 {
-    --tw-gradient-to: #eff6ff var(--tw-gradient-to-position)
-    --tw-gradient-to: #000409 var(--tw-gradient-to-position);
+#heroImg {
+    min-height: 100vh;
+    overflow: none;
+    max-width: 100%;
 }

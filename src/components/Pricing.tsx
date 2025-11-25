@@ -50,15 +50,17 @@ const plans = [
 
 export function Pricing() {
   return (
-    <section id="pricing" className="py-20 bg-white">
+    <section id="pricing" className="py-20 bg-amber-100">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-            Simple, Transparent Pricing
+        <div className="text-center mb-16 mt-8">
+          <h2 className="text-3xl text-slate-800 md:text-4xl font-bold font-body text-gray-900 my-1">
+            Simple, Transparent
           </h2>
-          <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            Choose the service that fits your needs. No hidden fees, ever.
-          </p>
+          <h2 className='text-4xl text-green-600 md:text-4xl font-bold font-body text-gray-900 mb-4 uppercase'>
+      PRICING</h2>
+          <p className="text-2xl text-gray-600 max-w-2xl mx-auto font-custom">
+            Choose the service that fits your needs. <strong>No hidden fees, ever.
+       </strong>   </p>
         </div>
 
         <div className="grid md:grid-cols-3 gap-8">

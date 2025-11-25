@@ -7,6 +7,8 @@ import { Pricing } from './components/Pricing';
 import { Reviews } from './components/Reviews';
 import { Contact } from './components/Contact';
 import { Footer } from './components/Footer';
+import { Reviews } from './components/UserReviews';
+import { BackToTop } from './components/BackToTop';
 
 function App() {
   return (
@@ -14,12 +16,13 @@ function App() {
       <Header />
       <Hero />
       <Services />
+        <HowItWorks />
       <Features />
-      <HowItWorks />
       <Pricing />
       <Reviews />
       <Contact />
       <Footer />
+      <BackToTop />
     </div>
   );
 }
