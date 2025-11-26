@@ -30,11 +30,9 @@ export function Header() {
             <a href="#services" className="text-slate-700 dark:text-gray-300 hover:text-sky-600 dark:hover:text-indigo-400 transition-colors font-medium text-lg">
               Services
             </a>
-            <a href="#steps" className="text-slate-700 dark:text-gray-300 hover:text-sky-600 dark:hover:text-indigo-400 transition-colors font-medium text-lg">
-          Steps
-          </a>
+
               <a href="#pricing" className="text-slate-700 dark:text-gray-300 hover:text-sky-600 dark:hover:text-indigo-400 transition-colors font-medium text-lg">
-              Pricing
+              Prices
             </a>
             <a href="#reviews" className="text-slate-700 dark:text-gray-300 hover:text-sky-600 dark:hover:text-indigo-400 transition-colors font-medium text-lg">
               Reviews
@@ -83,19 +81,13 @@ export function Header() {
               >
                 Services
               </a>
-              <a
-                href="#steps"
-                onClick={closeMenu}
-                className="text-slate-700 dark:text-gray-300 hover:text-sky-600 dark:hover:text-indigo-400 transition-colors font-medium py-2"
-              >
-                Steps
-              </a>
+      
               <a
                 href="#pricing"
                 onClick={closeMenu}
                 className="text-slate-700 dark:text-gray-300 hover:text-sky-600 dark:hover:text-indigo-400 transition-colors font-medium py-2"
               >
-                Pricing
+                Prices
               </a>
               <a
                 href="#reviews"

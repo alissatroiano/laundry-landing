@@ -1,4 +1,4 @@
-import { Truck, Droplet, Package, Zap } from 'lucide-react';
+import { Truck, Droplet, Package, Zap, Calendar, Sparkles } from 'lucide-react';
 
 const services = [
   {
@@ -27,6 +27,33 @@ const services = [
   },
 ];
 
+const steps = [
+  {
+    icon: Calendar,
+    title: 'Schedule Pickup',
+    description: 'Book online or call us. Choose a convenient time that works for your schedule.',
+    step: '1',
+  },
+  {
+    icon: Package,
+    title: 'We Collect',
+    description: 'Our team arrives at your door to collect your laundry. Just hand it over and relax.',
+    step: '2',
+  },
+  {
+    icon: Sparkles,
+    title: 'We Clean & Fold',
+    description: 'Professional washing with your choice of detergent and our signature perfect fold.',
+    step: '3',
+  },
+  {
+    icon: Truck,
+    title: 'We Deliver',
+    description: 'Fresh, clean laundry delivered back to your door. It\'s that simple!',
+    step: '4',
+  },
+];
+
 const colorClasses: Record<string, { bg: string; icon: string; hover: string }> = {
   sky: { bg: 'bg-sky-200', icon: 'text-sky-600', hover: 'hover:bg-sky-400' },
   cyan: { bg: 'bg-cyan-200', icon: 'text-cyan-600', hover: 'hover:bg-cyan-300' },
@@ -36,13 +63,13 @@ const colorClasses: Record<string, { bg: string; icon: string; hover: string }> 
 
 export function Services() {
   return (
-    <section id="services" className="py-20 bg-purple-50">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-5 py-10">
-        <div className="text-center mb-16">
-          <h2 className="text-5xl lg:text-6xl uppercase font-bold text-gray-900 mb-4 font-body">
+      <section className="py-10 mt-10 bg-gradient-to-br from-slate-950 via-sky-950 to-slate-950 text-white relative overflow-hidden" id="services">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-10">
+        <div className="text-center mb-8">
+          <h2 className="text-2xl lg:text-4xl uppercase font-bold text-yellow-300 mb-4 font-body">
             Services
           </h2>
-          <p className="text-xl md:text-2xl text-slate-800 max-w-2xl mx-auto font-custom">
+          <p className="text-xl md:text-2xl text-sky-50 max-w-2xl mx-auto font-custom font-light">
             Comprehensive laundry solutions designed to make your life easier
           </p>
         </div>
@@ -53,20 +80,57 @@ export function Services() {
             return (
               <div
                 key={index}
-                className={`${colors.bg} ${colors.hover} p-8 rounded-2xl transition-all transform shadow-xl hover:scale-105 hover:shadow-2xl`}
+                className={`${colors.bg} ${colors.hover} p-5 rounded-2xl transition-all transform shadow-xl hover:scale-105 hover:shadow-2xl`}
               >
                 <div className={`${colors.icon} mb-6`}>
-                  <service.icon className="w-12 h-12" />
+                  <service.icon className="w-10 h-10" />
                 </div>
-                <h3 className="text-2xl font-bold text-gray-900 mb-3 font-custom uppercase">
+                <h3 className="text-xl text-center font-bold text-gray-900 mb-3 font-custom uppercase">
                   {service.title}
                 </h3>
-                <p className="text-gray-600 leading-relaxed font-body text-sm">
+                <p className="text-gray-600 text-center leading-relaxed font-body text-sm">
                   {service.description}
                 </p>
               </div>
             );
           })}
+        </div>
+      </div>
+
+      <div className="absolute inset-0 opacity-10">
+        <div className="absolute top-0 left-0 w-96 h-96 bg-white rounded-full blur-3xl"></div>
+        <div className="absolute bottom-0 right-0 w-96 h-96 bg-white rounded-full blur-3xl"></div>
+      </div>
+
+      <div className="mt-10 relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="grid md:grid-cols-4 gap-8 text-center mb-16">
+          {steps.map((step, index) => (
+            <div key={index} className="relative">
+              <div className="text-center">
+                <div className="relative inline-block mb-6">
+                  <div className="w-20 h-20 bg-white rounded-2xl flex items-center justify-center transform rotate-6 transition-transform hover:rotate-12">
+                    <step.icon className="w-10 h-10 text-purple-600" />
+                  </div>
+                  <div className="absolute -top-2 -right-2 w-8 h-8 bg-yellow-400 rounded-full flex items-center justify-center font-bold text-gray-900 text-sm">
+                    {step.step}
+                  </div>
+                </div>
+
+                <h3 className="text-2xl font-semibold font-custom uppercase mb-3">
+                  {step.title}
+                </h3>
+                <p className="text-sky-100 leading-relaxed font-body">
+                  {step.description}
+                </p>
+              </div>
+
+              {index < steps.length - 1 && (
+                <div className="hidden md:block absolute top-10 left-[60%] w-[80%] h-0.5 bg-slate-800/50">
+                  <div className="absolute right-0 top-1/2 transform -translate-y-1/2 w-3 h-3 bg-yellow-400 rounded-full"></div>
+                </div>
+              )}
+            </div>
+          ))}
         </div>
       </div>
     </section>
