@@ -11,7 +11,7 @@ export function Hero() {
         <div className="grid md:grid-cols-2 gap-12 items-center my-5 mx-0">
           <div className="space-y-8">
             <h1 className="mt-5 text-4xl md:text-6xl font-bold text-gray-900 dark:text-white leading-tight text-lg21 transition-colors duration-300">
-              <span className='font-body uppercase mb-2 space-y-3 mt-4'>
+              <span className='font-body uppercase mb-2 space-y-3 pt-6'>
                 Fresh, Clean Laundry
               </span>
               <span className="block text-purple-700 dark:text-indigo-400 font-bold ml-px mt-2 font-custom text-4xl uppercase transition-colors duration-300">Delivered to Your Door!</span>

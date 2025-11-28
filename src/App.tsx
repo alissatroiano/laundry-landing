@@ -1,8 +1,8 @@
 import { Header } from './components/Header';
 import { Hero } from './components/Hero';
 import { Services } from './components/Services';
-import { Features } from './components/Features';
-import { HowItWorks } from './components/HowItWorks';
+import { About } from './components/About';
+import { Steps } from './components/Steps';
 import { Pricing } from './components/Pricing';
 import { Contact } from './components/Contact';
 import { Footer } from './components/Footer';
@@ -13,12 +13,12 @@ import { ThemeProvider } from './context/ThemeContext';
 function App() {
   return (
     <ThemeProvider>
-      <div className="min-h-screen bg-white dark:bg-navy-900 transition-colors duration-300">
+      <div className="min-h-screen bg-light dark:bg-slate-950 transition-colors duration-300">
         <Header />
         <Hero />
+        <About />
         <Services />
-        <HowItWorks />
-        <Features />
+        <Steps />
         <Pricing />
         <Reviews />
         <Contact />

@@ -24,7 +24,7 @@ export function BubbleAnimation() {
     canvas.height = window.innerHeight;
 
     const bubbles: Bubble[] = [];
-    const bubbleCount = 30;
+    const bubbleCount = 20;
 
     for (let i = 0; i < bubbleCount; i++) {
       bubbles.push({

@@ -20,18 +20,18 @@ export function Header() {
         <div className="flex justify-between items-center py-4">
           <a href="#heroImg" className="flex items-center space-x-2 hover:opacity-80 transition-opacity">
             <img src="/logo.png" alt="Military Mama Logo" className="w-8 h-8" />
-            <span className="text-2xl font-bold text-slate-900 dark:text-white">Military Mama</span>
+            <span className="text-xl font-semibold text-slate-900 dark:text-yellow-400">Military Mama Laundry</span>
           </a>
-
+          
           <nav className="hidden md:flex space-x-8">
+                        <a href="#about" className="text-slate-700 dark:text-gray-300 hover:text-sky-600 dark:hover:text-indigo-400 transition-colors font-medium text-lg">
+             About
+            </a>
             <a href="#services" className="text-slate-700 dark:text-gray-300 hover:text-sky-600 dark:hover:text-indigo-400 transition-colors font-medium text-lg">
               Services
             </a>
-            <a href="#features" className="text-slate-700 dark:text-gray-300 hover:text-sky-600 dark:hover:text-indigo-400 transition-colors font-medium text-lg">
-             Mission
-            </a>
               <a href="#pricing" className="text-slate-700 dark:text-gray-300 hover:text-sky-600 dark:hover:text-indigo-400 transition-colors font-medium text-lg">
-              Pricing
+              Prices
             </a>
             <a href="#reviews" className="text-slate-700 dark:text-gray-300 hover:text-sky-600 dark:hover:text-indigo-400 transition-colors font-medium text-lg">
               Reviews
@@ -67,25 +67,26 @@ export function Header() {
           <nav className="md:hidden pb-4 border-t border-gray-200 dark:border-navy-700">
             <div className="flex flex-col space-y-3 pt-4">
               <a
+                href="#about"
+                onClick={closeMenu}
+                className="text-slate-700 dark:text-gray-300 hover:text-sky-600 dark:hover:text-indigo-400 transition-colors font-medium py-2"
+              >
+                About
+              </a>
+                        <a
                 href="#services"
                 onClick={closeMenu}
                 className="text-slate-700 dark:text-gray-300 hover:text-sky-600 dark:hover:text-indigo-400 transition-colors font-medium py-2"
               >
                 Services
               </a>
-              <a
-                href="#features"
-                onClick={closeMenu}
-                className="text-slate-700 dark:text-gray-300 hover:text-sky-600 dark:hover:text-indigo-400 transition-colors font-medium py-2"
-              >
-                Mission
-              </a>
+      
               <a
                 href="#pricing"
                 onClick={closeMenu}
                 className="text-slate-700 dark:text-gray-300 hover:text-sky-600 dark:hover:text-indigo-400 transition-colors font-medium py-2"
               >
-                Pricing
+                Prices
               </a>
               <a
                 href="#reviews"
@@ -105,8 +106,8 @@ export function Header() {
                 href="tel:917-312-9946"
                 className="flex sm:hidden items-center text-purple-700 dark:text-indigo-400 hover:text-purple-500 dark:hover:text-indigo-300 transition-colors py-2"
               >
-                <Phone className="w-4 h-4 mr-2" />
-                <span className="font-medium">(917) 312-9946</span>
+                <Phone className="w-3 h-3 phone-icon" />
+                <span className="font-medium">  (917) 312-9946</span>
               </a>
             </div>
           </nav>
