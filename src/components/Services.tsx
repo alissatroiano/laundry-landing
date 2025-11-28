@@ -64,10 +64,9 @@ const colorClasses: Record<string, { bg: string; icon: string; hover: string }> 
 export function Services() {
   return (
       <section className="py-10 bg-gradient-to-br from-slate-950 via-sky-950 to-slate-950 text-white relative overflow-hidden" id="services">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-10">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-20">
         <div className="text-center mb-8">
-          <h2 className="text-2xl lg:text-4xl uppercase font-bold text-yellow-300 mb-4 font-body">
-            Services
+          <h2 className="text-4xl font-bold my-4 font-body uppercase text-purple-700 dark:text-amber-300 hover:text-purple-500 dark:hover:text-indigo-300 ">             Services
           </h2>
           <p className="text-xl md:text-2xl text-sky-50 max-w-2xl mx-auto font-custom font-light">
             Comprehensive laundry solutions designed to make your life easier
