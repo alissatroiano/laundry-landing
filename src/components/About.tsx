@@ -25,16 +25,14 @@ const features = [
 
 export function About() {
   return (
-    <section id="about" className="py-20 bg-gradient-to-br from-violet-950 via-slate-950 to-violet-800 relative overflow-hidden">
-
-
+    <section id="about" className="py-20 bg-gradient-to-br from-sky-100 via-white-100 to-sky-100 dark:from-purple-800 dark:via-violet-900 dark:to-purple-800 relative overflow-hidden">
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 cards">
         <div className="text-center mb-8 mt-6">
-          <h2 className="text-4xl font-bold text-yellow-500 mb-4 font-body uppercase text-teal-800">
+          <h2 className="text-4xl font-bold mb-4 font-body uppercase text-purple-700 dark:text-yellow-600 hover:text-purple-500 dark:hover:text-indigo-300 ">
             About
           </h2>
-          <p className="text-xl text-gray-100 max-w-2xl mx-auto font-custom mt-6">
-            <strong className='text-amber-400 uppercase mr-1'>Military Mama </strong> is not like any other laundry service. Every order is treated with professionalism, care, and, most importantly, a touch of love. Military Mama knows that there is no better feeling than a mother's touch, so she adds it to each and every order.
+          <p className="text-xl text-slate-800 dark:text-stone-100 max-w-2xl mx-auto font-custom mt-6">
+            <strong className='text-purple-700 dark:text-yellow-600 hover:text-purple-500 dark:hover:text-indigo-300 uppercase mr-1'>Military Mama </strong> is not like any other laundry service. Every order is treated with professionalism, care, and, most importantly, a touch of love. Military Mama knows that there is no better feeling than a mother's touch, so she adds it to each and every order.
           </p>
         </div>
 
@@ -42,16 +40,16 @@ export function About() {
           {features.map((feature, index) => (
             <div
               key={index}
-              className="card__bx bg-opacity-80 p-2 rounded-l shadow-lg  transition-shadow  text-center"
+              className="card__bx bg-sky-100 dark:bg-purple-950 bg-opacity-65 shadow-xl rounded-full p-3 transition-shadow mb-3 text-center"
             >
-              <h3 className="text-xl uppercase font-bold text-stone-100 font-custom">
+              <h3 className="text-xl uppercase font-bold text-stone-950 dark:text-stone-50 font-custom">
                 <div className='text-center mb-3 '>
-                  <feature.icon className="text-amber-400 " />
+                  <feature.icon className="text-yellow-500 " />
                 </div>
                 {feature.title}
               </h3>
               <div>
-                <p className="mt-3 text-stone-100 leading-relaxed font-body text-sm">
+                <p className="mt-3 text-stone-950 dark:text-purple-100 leading-relaxed font-body text-sm">
                   {feature.description}
                 </p>
               </div>
@@ -60,26 +58,26 @@ export function About() {
           ))}
         </div>
 
-        <div className="rounded-3xl shadow-2xl overflow-hidden bg-opacity-75" id='foldedClothes'>
+        <div className="rounded-3xl shadow-2xl bg-indigo-100 bg-opacity-85" id='foldedClothes'>
           <div className="grid md:grid-cols-2 gap-0">
-            <div className="p-12">
-              <h3 className="text-3xl font-bold font-custom text-stone-50 mb-6">
+            <div className="pt-10">
+              <h3 className="text-3xl font-bold font-custom dark:text-stone-50 mb-6">
                 The Perfect Fold, Every Time
               </h3>
-              <p className="text-stone-100 font-semibold font-body leading-relaxed mb-6">
+              <p className="dark:text-stone-100 font-semibold font-body leading-relaxed mb-6">
                 Our team takes pride in delivering perfectly folded clothes that look like they came straight from a boutique. We use specialized folding techniques that minimize wrinkles and maximize freshness.
               </p>
-              <ul className="space-y-3 font-custom">
-                <li className="flex text-stone-100 font-custom">
-                  <CheckCircle className="w-5 h-5 text-green-600 mr-3 flex-shrink-0 text-right" />
+              <ul className="spacmbe-y-3 font-custom">
+                <li className="flex text-stone-600 dark:text-stone-100 font-custom">
+                  <CheckCircle className="w-5 h-5 text-green-800 dark:text-green-600 mr-3 flex-shrink-0 text-right" />
                   <span>Professional folding standards</span>
                 </li>
-                <li className="flex text-stone-100">
-                  <CheckCircle className="w-5 h-5 text-green-600 mr-3 flex-shrink-0" />
+                <li className="flex text-stone-600 dark:text-stone-100">
+                  <CheckCircle className="w-5 h-5 text-green-800 dark:text-green-600 mr-3 flex-shrink-0" />
                   <span> Wrinkle-free presentation</span>
                 </li>
-                <li className="flex text-stone-100">
-                  <CheckCircle className="w-5 h-5 text-green-600 mr-3 flex-shrink-0" />
+                <li className="flex text-stone-600 dark:text-stone-100">
+                  <CheckCircle className="w-5 h-5 text-green-800 dark:text-green-600 mr-3 flex-shrink-0" />
                   <span> Organized by type and preference</span>
                 </li>
               </ul>

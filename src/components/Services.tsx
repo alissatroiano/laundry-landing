@@ -63,7 +63,7 @@ const colorClasses: Record<string, { bg: string; icon: string; hover: string }> 
 
 export function Services() {
   return (
-      <section className="py-10 mt-10 bg-gradient-to-br from-slate-950 via-sky-950 to-slate-950 text-white relative overflow-hidden" id="services">
+      <section className="py-10 bg-gradient-to-br from-slate-950 via-sky-950 to-slate-950 text-white relative overflow-hidden" id="services">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-10">
         <div className="text-center mb-8">
           <h2 className="text-2xl lg:text-4xl uppercase font-bold text-yellow-300 mb-4 font-body">

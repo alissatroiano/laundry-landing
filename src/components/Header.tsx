@@ -30,7 +30,6 @@ export function Header() {
             <a href="#services" className="text-slate-700 dark:text-gray-300 hover:text-sky-600 dark:hover:text-indigo-400 transition-colors font-medium text-lg">
               Services
             </a>
-
               <a href="#pricing" className="text-slate-700 dark:text-gray-300 hover:text-sky-600 dark:hover:text-indigo-400 transition-colors font-medium text-lg">
               Prices
             </a>
