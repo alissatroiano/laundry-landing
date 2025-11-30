@@ -54,14 +54,11 @@ export function Pricing() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
       <div className="text-center mt-5">
-          <h2 className='text-2xl text-green-400 md:text-4xl text-shadow-lg font-bold font-body text-gray-900 uppercase'>
+          <h2 className='text-4xl text-stone-50 dark:text-amber-400 md:text-4xl text-shadow-lg font-bold font-body text-gray-900 uppercase'>
       Prices</h2>
-          <p className="mt-4 text-xl text-sky-50 max-w-2xl mx-auto font-custom font-semibold">
+          <p className="mt-4 text-xl text-stone-50 max-w-2xl mx-auto font-custom font-semibold mb-5">
            Choose the service that fits your needs. </p>
-          <p className="mt-1 mb-5 text-xl text-stone-50 max-w-2xl mx-auto font-custom font-semibold uppercase "> Simple. Transparent, Pricing 
-              <strong className='text-amber-400 mx-2'> No hidden fees, ever.
-       </strong>   
-            </p>
+    
         </div>
 
         <div className="grid md:grid-cols-3 gap-8 px-10 pt-10">
@@ -76,7 +73,7 @@ export function Pricing() {
             >
               {plan.popular && (
                 <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
-                  <span className="bg-green-500 text-white px-4 py-1 rounded-full text-sm font-semibold font-body">
+                  <span className="bg-amber-400 text-black uppercase px-4 py-2 rounded-full text-base font-semibold font-custom">
                     Most Popular
                   </span>
                 </div>
@@ -125,7 +122,7 @@ export function Pricing() {
         </div>
 
         <div className="mt-12 text-center">
-          <p className="text-gray-600">
+          <p className="text-gray-900 font-bold font-custom text-lg">
             Minimum order: 10 lbs • First-time customers get 20% off their first order
           </p>
         </div>

@@ -78,17 +78,24 @@ svg.lucide.lucide-phone.w-4.h-4.mr-2 {
 }
 
 #services {
-  background: linear-gradient(180deg, #120440c0, 5%, #120347ab, 50%, #020562a2), url('../public/machines.jpg');
+  max-width: 100%;
+  height: auto;
+  background: linear-gradient(180deg, #120440c0, 5%, #120347ab, 50%, #020562a2), url('../public/3d-soap.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  overflow: hidden;
+}
+
+#pricing {
+  background: linear-gradient(180deg, #06368ae2, 5%, #025063e2, 50%, #2a9bbeac), url('../public/soap-bg.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 
-#pricing {
-  background: linear-gradient(180deg, #06368ad4, 5%, #066076c0, 50%, #073151aa), url('../public/soap-bg.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+.quote-box {
+  box-shadow: 5px 5px 25px 10px #535353a2;
 }
 
 li.flex.items-start.text-start.text-left {

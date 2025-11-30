@@ -74,7 +74,7 @@ export function Reviews() {
     return (
       <div className="flex gap-1 mb-4">
         {[...Array(rating)].map((_, i) => (
-          <span key={i} className="text-yellow-400 text-xl">★</span>
+          <span key={i} className="text-yellow-500 font-bold dark:text-yellow-300 text-2xl">★</span>
         ))}
       </div>
     );
@@ -83,23 +83,23 @@ export function Reviews() {
   return (
     <section id="reviews" className="py-20 bg-neutral-00">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+        <div className="text-center mt-7 mb-10">
+          <h2 className="text-4xl font-bold text-gray-900 dark:text-amber-400 font-body uppercase mb-4">
             Reviews
           </h2>
-          <div className="w-20 h-1 bg-blue-600 mx-auto rounded-full"></div>
+          <div className="w-20 h-1 bg-cyan-500 mx-auto rounded-full"></div>
         </div>
 
-        <div className="bg-gradient-to-br from-gray-50 to-blue-50 rounded-3xl p-12 shadow-lg">
+        <div className="bg-gradient-to-br from-sky-100 via-sky-200 to-sky-300 dark:from-indigo-400 dark:via-violet-600 dark:to-indigo-400 rounded-3xl p-12 quote-box">
           <div className="flex flex-col md:flex-row items-center gap-8">
             <div className="flex-shrink-0">
               <div className="relative w-40 h-40">
                 <img
                   src={currentReview.image}
                   alt={currentReview.name}
-                  className="w-40 h-40 rounded-full object-cover shadow-lg border-4 border-white"
+                  className="w-40 h-40 rounded-full object-cover shadow-xl border-4 border-white"
                 />
-                <div className="absolute -bottom-2 -right-2 bg-blue-600 text-white p-3 rounded-full shadow-lg">
+                <div className="absolute -bottom-2 -right-2 bg-stone-800 text-yellow-400 p-3 rounded-full shadow-lg">
                   <Quote className="w-6 h-6" />
                 </div>
               </div>
@@ -107,14 +107,14 @@ export function Reviews() {
 
             <div className="flex-1">
               {renderStars(currentReview.rating)}
-              <p className="text-gray-700 text-lg leading-relaxed mb-6 italic">
+              <p className="dark:text-gray-50 text-2xl font-custom mb-6 italic me-10">
                 "{currentReview.text}"
               </p>
               <div>
-                <h3 className="text-2xl font-bold text-gray-900">
+                <h3 className="text-2xl font-custom font-bold uppercase dark:text-yellow-400">
                   {currentReview.name}
                 </h3>
-                <p className="text-blue-600 font-medium">
+                <p className="dark:text-stone-50 font-custom uppercase text-lg font-medium">
                   {currentReview.title}
                 </p>
               </div>
@@ -124,7 +124,7 @@ export function Reviews() {
           <div className="flex justify-center gap-6 mt-10">
             <button
               onClick={goToPrevious}
-              className="bg-blue-600 text-white p-3 rounded-full hover:bg-blue-700 transition-all transform hover:scale-110 shadow-md"
+              className="bg-amber-500 text-white p-3 rounded-full hover:bg-amber-600 transition-all transform hover:scale-110 shadow-md"
               aria-label="Previous review"
             >
               <ChevronLeft className="w-6 h-6" />
@@ -132,14 +132,14 @@ export function Reviews() {
 
             <button
               onClick={goToRandom}
-              className="px-6 py-3 bg-white text-blue-600 border-2 border-blue-600 rounded-full hover:bg-blue-50 transition-all font-medium"
+              className="px-6 py-3 bg-white text-stone-900 border-2 border-amber-400 rounded-full hover:bg-amber-400 transition-all font-custom text-lg"
             >
               Random
             </button>
 
             <button
               onClick={goToNext}
-              className="bg-blue-600 text-white p-3 rounded-full hover:bg-blue-700 transition-all transform hover:scale-110 shadow-md"
+              className="bg-amber-500 text-white p-3 rounded-full hover:bg-amber-600 transition-all transform hover:scale-110 shadow-md"
               aria-label="Next review"
             >
               <ChevronRight className="w-6 h-6" />
@@ -152,7 +152,7 @@ export function Reviews() {
                 key={index}
                 onClick={() => setCurrentIndex(index)}
                 className={`h-2 rounded-full transition-all ${
-                  index === currentIndex ? 'bg-blue-600 w-8' : 'bg-gray-300 w-2'
+                  index === currentIndex ? 'bg-stone-800 w-8' : 'dark:bg-gray-300 bg-stone-600 bg-opacity-50 w-2'
                 }`}
                 aria-label={`Go to review ${index + 1}`}
               />
@@ -161,7 +161,7 @@ export function Reviews() {
         </div>
 
         <div className="mt-12 text-center">
-          <p className="text-gray-600 text-sm">
+          <p className="text-stone-900 dark:text-gray-100 text-sm">
             {currentIndex + 1} of {reviews.length} reviews
           </p>
         </div>
